@@ -79,10 +79,15 @@ WSGI_APPLICATION = 'personal_profolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'rp_portfolio',
+        'USER': 'root',
+        'PASSWORD': 'AaNr2627.',
+        'HOST': 'localhost',  # Or your MySQL host
+        'PORT': '3306',       # Or your MySQL port
     }
 }
+
 
 
 # Password validation
